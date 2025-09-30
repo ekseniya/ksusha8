@@ -9,15 +9,20 @@ public class Practicum {
         hares.add(new MountainHare(1, 2.3, 100));
 
         System.out.println("В лесу лето!");
+        Forest forest = new Forest(hares);
+        forest.setSeason("лето");
         // создайте объект "летний лес с зайцами"
 
         System.out.println("Список зайцев:");
+        forest.printHares();
         // напечатайте список всех зайцев
 
         System.out.println("В лесу зима!");
+        forest.setSeason("зима");
         // поменяйте время года на зиму
 
         System.out.println("Список зайцев:");
+        forest.printHares();
         // напечатайте список всех зайцев
     }
 
